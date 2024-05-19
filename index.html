@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker Game</title>
+    <title>MusiStream Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="overlay"></div> <!-- Sobreposição -->
+
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">MusiStream</a>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="square">
-            <h1>Faça Login</h1>
-            <h2>Insira Seu Email</h2>
-            <form>
+            <h1>MusiStream</h1>
+            <h2>Faça Login</h2>
+            <form id="loginForm">
                 <input type="text" id="email" placeholder="Digite seu Email">
+                <input type="password" id="senha" placeholder="Digite sua Senha">
+                <button type="button" onclick="login()">Login</button>
             </form>
-            <h2 id="texto_senha">Digite sua senha</h2>
-            <form>
-                <input type="text" id="senha" placeholder="Digite sua senha">
-                <button type="button" onclick="senhaEmail()">Enviar</button> <!-- Adicionado onclick -->
-            </form>
+            <a href="#">Não possui Login?</a>
             <p id="mostrar"></p>
         </div>
-        <!-- Adicionando um parágrafo para mostrar o email -->
-        
     </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
