@@ -9,10 +9,21 @@
 <body>
     <div class="overlay"></div> <!-- Sobreposição -->
     <div class="container">
-        <h1>Clicker Game</h1>
-        <p>Clique na imagem para ganhar pontos!</p>
-        <div class="score">Pontuação: <span id="score">0</span></div>
-        <img src="imagens/images-removebg-preview.png" alt="Imagem" id="image">
+        <div class="square">
+            <h1>Faça Login</h1>
+            <h2>Insira Seu Email</h2>
+            <form>
+                <input type="text" id="email" placeholder="Digite seu Email">
+            </form>
+            <h2 id="texto_senha">Digite sua senha</h2>
+            <form>
+                <input type="text" id="senha" placeholder="Digite sua senha">
+                <button type="button" onclick="senhaEmail()">Enviar</button> <!-- Adicionado onclick -->
+            </form>
+            <p id="mostrar"></p>
+        </div>
+        <!-- Adicionando um parágrafo para mostrar o email -->
+        
     </div>
     <script src="scripts.js"></script>
 </body>

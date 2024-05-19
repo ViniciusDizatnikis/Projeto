@@ -1,7 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
 }
 
 .overlay {
@@ -18,10 +21,58 @@ body {
     position: relative; /* Para que a posição dos elementos seja relativa ao contêiner */
     z-index: 2; /* Para garantir que o conteúdo esteja acima da sobreposição */
     text-align: center;
-    margin-top: 50px; /* Ajuste para a posição vertical */
 }
 
-.score {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.square {
+    width: 400px;  /* Largura do quadrado */
+    background-color: #ffffff; /* Cor de fundo do quadrado */
+    display: flex; /* Usar Flexbox para centralizar o texto */
+    flex-direction: column; /* Dispor os itens em coluna */
+    justify-content: flex-start; /* Alinhar os itens ao topo */
+    align-items: center; /* Centralizar os itens horizontalmente */
+    padding: 20px; /* Adicionar espaçamento interno */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.square h1, .square h2 {
+    margin: 0; /* Remover margens padrão */
+    padding-bottom: 10px; /* Espaçamento inferior */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px; /* Espaçamento inferior entre o campo de texto e o botão */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaçamento superior do botão */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#texto_senha {
+    margin-top: 20px; /* Espaçamento superior do texto da senha */
 }

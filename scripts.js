@@ -1,10 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const image = document.getElementById('image');
-    const scoreSpan = document.getElementById('score');
-    let score = 0;
+function senhaEmail() {
+    // Obter o valor do campo de senha
+    var senha = document.getElementById("senha").value;
 
-    image.addEventListener('click', function() {
-        score++;
-        scoreSpan.textContent = score;
-    });
-});
+    // Obter o valor do campo de email
+    var email = document.getElementById("email").value;
+
+    // Obter o elemento onde queremos exibir os valores
+    var mostrar = document.getElementById("mostrar");
+
+    // Exibir os valores
+    mostrar.textContent = "Senha: " + senha + ", Email: " + email;
+}
